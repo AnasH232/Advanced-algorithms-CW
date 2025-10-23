@@ -168,7 +168,7 @@ void test_comparisons() {
         auto insertionTime = duration_cast<nanoseconds>(end - start);
         int insertionComp = count;
 
-        cout << "\nSorted array: ";
+        cout << "Sorted array: ";
         printArr(arr1, sz);
 
         cout << "\nBubble sort comparisons made: " << bubbleComp;
@@ -216,7 +216,7 @@ void test_comparisons() {
         auto insertionTime = duration_cast<nanoseconds>(end - start);
         int insertionComp = count;
 
-        cout << "\nSorted array: ";
+        cout << "Sorted array: ";
         printArr(arr1, sz);
 
         cout << "\nBubble sort comparisons made: " << bubbleComp;
@@ -264,7 +264,7 @@ void test_comparisons() {
         auto insertionTime = duration_cast<nanoseconds>(end - start);
         int insertionComp = count;
 
-        cout << "\nSorted array: ";
+        cout << "Sorted array: ";
         printArr(arr1, sz);
 
         cout << "\nBubble sort comparisons made: " << bubbleComp;
