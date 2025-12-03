@@ -6,14 +6,15 @@ int main()
 {
     random_device rd;
 	mt19937 gen(rd());
-    int real_weight = 5;
+    uniform_int_distribution<> wDist(1, 15);
+	
+    int real_weight = wDist(gen);
+    int fake_weight = wDist(gen);
+    while (fake_weight == real_weight) fake_weight = wDist(gen);
 
-    int n, fake_weight;
+    int n;
     cout << "Enter number of coins: ";
     cin >> n;
-
-	cout << "Enter weight of fake coin: ";
-	cin >> fake_weight;
 
 	int* coins = new int[n];
 
